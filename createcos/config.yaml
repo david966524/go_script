@@ -1,0 +1,8 @@
+#对象存储服务，以下配置二选一，目前支持两种，腾讯云和minio，二者配置好其中一种即可（如果使用minio参考https://doc.rentsoft.cn/#/qa/minio搭建minio服务器）
+credential: #腾讯cos，发送图片、视频、文件时需要，请自行申请后替换，必须修改
+  tencent:
+    appID: 1318535612
+    region: ap-hongkong
+    bucket: sd2fmq-p2-ylhk-1318535612
+    secretID: AKIDJI3ZqseCUWHm106wXszqRmrgFXY3IH0T
+    secretKey: IMCm6B3gYAZhZBXdT2LOGWWIo46uTovj
