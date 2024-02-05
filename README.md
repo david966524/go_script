@@ -8,3 +8,5 @@
 向cloudflare 方能 一键添加域名脚本
 ## createcos
 创建腾讯云cos存储桶 并修改配置文件
+## aws_ec2
+aws ec2 创建 查询 删除 
