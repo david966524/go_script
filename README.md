@@ -10,3 +10,5 @@
 创建腾讯云cos存储桶 并修改配置文件
 ## aws_ec2
 aws ec2 创建 查询 删除 
+## mybot
+telegram 查询aliyun 账单 和 额度
