@@ -41,6 +41,7 @@ func AccoutBanlance() string {
 	result, err := cli.QueryAccountBalanceWithOptions(runtime)
 	if err != nil {
 		fmt.Print(err.Error())
+		return err.Error()
 	}
 	return "账户余额" + *result.Body.Data.AvailableAmount + *result.Body.Data.Currency
 }
@@ -63,11 +64,13 @@ func DailyBill() string {
 	cli, err := CreateClient()
 	if err != nil {
 		fmt.Print(err.Error())
+		return err.Error()
 	}
 	runtime := &util.RuntimeOptions{}
 	result, err := cli.QueryAccountBillWithOptions(queryAccountBillRequest, runtime)
 	if err != nil {
 		fmt.Print(err.Error())
+		return err.Error()
 	}
 	return yesterdayDate + "----" + strconv.FormatFloat(float64(*result.Body.Data.Items.Item[0].PretaxAmount), 'f', 2, 32) + *result.Body.Data.Items.Item[0].Currency
 }
